@@ -1,0 +1,359 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background-color: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-login,
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login>h1 {
+    color: #77ffc0;
+    font-size: 3vw;
+}
+
+.left-login {
+    flex-direction: column;
+}
+
+.card-login {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10x 40px #00000056;
+}
+
+.left-login-image {
+    width: 35vw;
+}
+
+.card-login>h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+    font-size: 1.85rem;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.textfield>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 18px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10x 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield>label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+    font-size: 13pt;
+}
+
+.textfield>label::placeholder {
+    color: #f0ffff94;
+}
+
+a > .btn-login {
+    width: 100%;
+    height: 6vh;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+.link {
+    width: 100%;
+    padding: 7px 0;
+    margin: 25px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-dois {
+    width: 100%;
+    height: 92vh;
+    background-color: #201b2c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adicionando {
+    width: 100%;
+    height: 25%;
+    padding-top: 50px;
+    display: inline;
+    position: relative
+}
+
+#form-adiciona {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.grupo {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 5px 20px;
+    text-align: center;
+    
+}
+
+.grupo>input {
+    width: 100%;
+    height: 5vh;
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10x 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+
+}
+
+.grupo>label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+    font-size: 13pt;
+    width: 100%;
+}
+
+.grupo>label::placeholder {
+    color: #f0ffff94;
+}
+
+.bto-principal {
+    width: 12%;
+    height: 4.7vh;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+    display: block;
+    margin-top: auto;
+    margin-bottom: 5.95px;
+    margin-left: 20px;
+}
+
+header > h1 {
+    color: #00ff88;
+    font-weight: 800;
+    font-size: 14pt;
+    padding-bottom: 11px;
+}
+
+.buscar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+    position: absolute;
+    margin-left: calc(
+        (100vw - 50rem)  / 2);
+}
+
+#filtrar-tabela {
+    width: 70%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10x 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+#buscar-musicas {
+    background-color: #2f2841;
+    border: none; 
+}
+
+#buscar-musicas > i {
+    color: #00ff88;
+    align-items: center;
+    font-size: 24pt;
+}
+
+.tabela  {
+    width: 75%;
+}
+
+.font-tabela {
+    color: #f0ffffde;
+    font-size: 13pt;
+    text-align: center;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'icones';
+    src: url(../img/icones.ttf);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2f2841;
+    padding: 8px 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    height: 8vh;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+.cabecalho__menu i::before {
+    content: "\e904";
+    font-size: 24px;
+    display: none;
+}
+
+
+.cabecalho__logo {
+    width: 40px;
+}
+
+.cabecalho__perfil {
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .cabecalho {
+        background-color: #2f2841;
+        height: 8vh;
+        box-sizing: border-box;
+        width: 100vw; 
+         
+    }
+    .cabecalho__menu {
+        display: none;
+        
+    }
+    .cabecalho__logo {
+        display: none;
+    }
+    .cabecalho__perfil {
+      display: grid;
+      grid-template-columns: repeat(3, auto); 
+      column-gap: 9px;
+      align-items: center;
+      justify-self: flex-end; 
+      color: #95999C;
+      padding: 8px 10px;
+      padding-top: 1.4rem;
+
+    }
+    .cabecalho__perfil::before {
+       content: "";
+       display: block;
+       width: 32px;
+       height: 32px;
+       background-image: url(../img/profile_3.png); 
+       background-size: contain;
+       background-repeat: no-repeat;
+       background-position: center;
+    }
+    .cabecalho__perfil::after {
+        content: "\e90d";
+        color: #FFFFFF;
+        font-size: 1.8rem;
+        font-family: 'icones';
+    }
+}
+
+.cabecalho__menu {
+    display: none;
+}
+
+.cabecalho > h1 {
+    display: block;
+    width: 7.5rem;
+    padding-left: 10px;
+    padding-top: 1.4rem;
+}
+
+.cabe-tab {
+    font-weight: 800;
+}
+
+.albumania {
+    border: none;
+    background-color: #2f2841;
+    font-weight: 800;
+    color: #00ff88;
+}
+
+@media screen and (max-width: 1380px) {
+    #filtrar-tabela {
+        height: 50%;
+        padding: 7px;
+    }
+}
+
+.invisivel {
+    display: none;
+}

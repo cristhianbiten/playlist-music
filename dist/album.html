@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>AlbuMania</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1>
+            <a href="index.html">
+                <input type="button" value="ALBUMANIA" class="albumania"/>
+            </a>
+        </h1>
+        <button class="cabecalho__menu" aria-label="Menu"><i></i></button>
+        <p class="cabecalho__perfil">Ana</p>
+        <form class="buscar">
+            <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome da música">
+            <label id="buscar-musicas" for="filtrar-tabela" class="botao"><i class="material-icons">search</i></label>
+        </form>
+    </header>
+    <main class="main-dois">
+        <section class="adicionando">
+            <form id="form-adiciona">
+                <div class="grupo">
+                    <label for="musica-add">Música:</label>
+                    <input id="musica-add" name="Música" type="text" placeholder="Digite o nome da música" class="campo"
+                        required>
+                </div>
+                <div class="grupo">
+                    <label for="album-add">Album:</label>
+                    <input id="album-add" name="Album" type="text" placeholder="Digite o nome do album"
+                        class="campo campo-medio" required>
+                </div>
+                <div class="grupo">
+                    <label for="cantor-add">Artista:</label>
+                    <input id="cantor-add" name="Cantor" type="text" placeholder="Digite o nome do artista"
+                        class="campo campo-medio" required>
+                </div>
+                <button type="submit" id="adicionar-musica" class="botao bto-principal">Adicionar</button>
+            </form>
+        </section>
+        <section class="tabela">
+            <table class="table table-sm font-tabela">
+                <thead>
+                    <tr class="cabe-tab">
+                        <th scope="col">Iniciar</th>
+                        <th scope="col">Música</th>
+                        <th scope="col">Album</th>
+                        <th scope="col">Artista</th>
+                        <th scope="col">Deletar</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-musicas">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
