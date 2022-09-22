@@ -4,4 +4,4 @@
 
 <p>Site desenvolvivo utilizando Typescript, HTML e CSS</p>
 
-<p>Necessário instalar o node e typescript para realizar os testes</p>
+<p>Necessário instalar o node e typescript</p>
